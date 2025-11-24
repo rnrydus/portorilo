@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오 | 구교연</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#home">Portfolio</a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">안녕하세요,<br>구교연입니다</h1>
+            <p class="hero-subtitle">한국성서대학교 AI융합학부에서 공부하고 있습니다</p>
+            <a href="#projects" class="cta-button">프로젝트 보기</a>
+        </div>
+        <div class="hero-image">
+            <div class="hero-image-placeholder"></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">프로젝트</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder project-1"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">프로젝트 1</h3>
+                        <p class="project-description">
+                            모던한 웹 애플리케이션 개발 프로젝트입니다. 
+                            사용자 경험을 최우선으로 고려한 인터페이스를 제공합니다.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="https://example.com/project1" target="_blank" rel="noopener noreferrer" class="project-link">자세히 보기 →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder project-2"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">프로젝트 2</h3>
+                        <p class="project-description">
+                            반응형 웹사이트 디자인 및 개발 프로젝트입니다. 
+                            모든 디바이스에서 완벽하게 작동합니다.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <a href="https://example.com/project2" target="_blank" rel="noopener noreferrer" class="project-link">자세히 보기 →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder project-3"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">프로젝트 3</h3>
+                        <p class="project-description">
+                            모바일 앱과 웹을 연동한 풀스택 프로젝트입니다. 
+                            실시간 데이터 처리와 사용자 인증 기능을 포함합니다.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <a href="https://example.com/project3" target="_blank" rel="noopener noreferrer" class="project-link">자세히 보기 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">연락하기</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>함께 일하고 싶으신가요?</h3>
+                    <p>프로젝트나 협업에 대해 이야기하고 싶으시다면 언제든지 연락주세요.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <strong>이메일</strong>
+                            <p>rnrydus2507@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">이름</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">이메일</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">메시지</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">보내기</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
